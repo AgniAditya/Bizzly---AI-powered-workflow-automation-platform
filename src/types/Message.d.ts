@@ -2,7 +2,7 @@ export type Message = {
     id: string;
     text: string | null;
     sender: 'user' | 'assistant' | 'system';
-    timestamp: Date;
+    timestamp: string;
 }
 
 export type ChatCompletionMessageParam = {

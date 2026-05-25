@@ -15,11 +15,12 @@ function PromptInput() {
     e.preventDefault();
     // Handle form submission logic here
     if(input.trim() === '') return; // Prevent sending empty messages
+
     const message : Message = {
       id: Date.now().toString(),
       text: input.trim(),
       sender: 'user',
-      timestamp: new Date()
+      timestamp: new Date(new Date().toISOString()).toLocaleString()
     };
 
     dispatch(addMessage(message)); // Add message to Redux store
