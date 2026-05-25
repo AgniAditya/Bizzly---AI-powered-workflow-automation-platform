@@ -1,7 +1,8 @@
 {
   "name": "bizzly",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "A AI powered desktop application which helps you to automate your workflow and increase your productivity by connecting you to your tools.",
   "type": "module",
   "main": "dist-electron/main.js",
   "scripts": {
@@ -45,35 +46,10 @@
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
   },
-  "build": {
-    "appId": "com.bizzly.app",
-    "productName": "Bizzly",
-
-    "files": [
-      "dist-electron/**/*",
-      "dist-react/**/*"
-    ],
-
-    "extraResources": [
-      {
-        "from": "dist-electron",
-        "to": "dist-electron"
-      }
-    ],
-
-    "win": {
-      "target": ["portable", "msi"]
-    },
-
-    "mac": {
-      "target": "dmg"
-    },
-
-    "linux": {
-      "target": "AppImage",
-      "category": "Utility"
-    },
-
-    "icon": "public/icon.png"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgniAditya/Bizzly-AI_powered_workflow_automation_platform"
+  },
+  "author": "Aditya Agnihotri",
+  "license": "MIT"
 }
