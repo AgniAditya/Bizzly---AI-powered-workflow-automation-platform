@@ -32,7 +32,7 @@ export class GroqAI {
       id: chatCompletion.id,
       text: chatCompletion.choices[0]?.message?.content,
       sender: "assistant",
-      timestamp: new Date(),
+      timestamp: new Date(new Date().toISOString()).toLocaleString(),
     }
     
     return response;
