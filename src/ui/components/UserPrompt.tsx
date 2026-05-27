@@ -1,12 +1,16 @@
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 function UserPrompt({ text }: { text: string }) {
   return (
     <div className="w-full h-fit justify-end flex">
       <div className="bg-[#1f1f1f] text-white text-md px-4 py-2 rounded-lg">
-        {text}
+        <div className="markdown-body">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{text}</ReactMarkdown>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default UserPrompt
+export default UserPrompt;
