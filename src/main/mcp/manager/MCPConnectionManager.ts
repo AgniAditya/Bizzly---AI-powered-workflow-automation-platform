@@ -1,4 +1,4 @@
-import { MCPServerConfig } from '../../types/MCP.js';
+import { MCPServerConfig } from '../../../types/MCP.js';
 import { MCPClientInstance } from '../client/MCPClientInstance.js';
 
 const serverConfig: MCPServerConfig = {

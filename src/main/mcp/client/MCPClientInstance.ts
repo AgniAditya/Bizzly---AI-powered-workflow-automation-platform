@@ -1,5 +1,5 @@
 import { Client, StdioClientTransport } from '@modelcontextprotocol/client';
-import type { MCPServerConfig } from '../../types/MCP.js';
+import type { MCPServerConfig } from '../../../types/MCP.js';
 import { ResponseMessage } from '../../../types/Message.js';
 import { Tool } from '@modelcontextprotocol/client';
 
